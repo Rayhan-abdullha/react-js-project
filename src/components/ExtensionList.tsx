@@ -10,6 +10,13 @@ type ExtensionType = {
 
 const ExtensionList = () => {
     const [data, setData] = useState<ExtensionType[]>([]);
+    const [filter, setFilter] = useState<string>('all');
+    const filterData = data.filter(extension => {
+       if (filter === 'active') return extension.isActive;
+        if (filter === 'inactive') return !extension.isActive;
+        return true;
+    });
+
 
     useEffect(() => {
         async function fetchData() {
@@ -22,9 +29,9 @@ const ExtensionList = () => {
 
     return (
         <div className="container mx-auto px-3">
-            <FilterButtons />
+            <FilterButtons filterFunc={(props) => setFilter(props) }/>
             <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {data.map((extension, index) => (
+                {filterData.map((extension, index) => (
                     <div
                         key={index}
                         className="border border-slate-800 rounded-lg p-4"
