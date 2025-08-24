@@ -1,12 +1,6 @@
 [
     {
-        "logo": "./assets/images/logo-dev-lens.svg",
-        "name": "DevLens",
-        "description": "Quickly inspect page layouts and visualize element boundaries.",
-        "isActive": true
-    },
-    {
-        "logo": "./assets/images/logo-style-spy.svg",
+        "logo": "./assets/images/logo-dom-snapshot.svg",
         "name": "StyleSpy",
         "description": "Instantly analyze and copy CSS from any webpage element.",
         "isActive": true
@@ -71,4 +65,4 @@
         "description": "Enhanced developer console with advanced filtering and logging.",
         "isActive": true
     }
-  ]
+]

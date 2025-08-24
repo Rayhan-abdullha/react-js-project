@@ -1,8 +1,13 @@
+// src/App.jsx
 
-const App = () => {
+import ExtensionList from "./components/ExtensionList";
+import Header from "./components/Header";
+
+export default function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Header />
+      <ExtensionList/>
+    </div>
+  );
 }
-
-export default App
