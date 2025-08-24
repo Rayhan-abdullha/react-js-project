@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import logo from '../../public/assets/images/logo.svg'
 import moon from '../../public/assets/images/icon-moon.svg'
 import sun from '../../public/assets/images/icon-sun.svg'
